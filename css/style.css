@@ -24,9 +24,29 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 body {
   font-family: 'Proxima Nova Light', serif;
   color: #262626;
+  background-color: black;
 }
 
 .button-o {
@@ -34,8 +54,8 @@ body {
   padding: 17px 22px;
   text-transform: uppercase;
   color: #507fe1;
-  background-color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  background-color: #fff;
 }
 
 .button {
