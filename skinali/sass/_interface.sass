@@ -2,6 +2,9 @@ body
     +light
     color: $text-color
 
+img
+    max-width: 100%
+
 .section
     padding: 100px 0
     &-title
@@ -23,14 +26,33 @@ a
     +bold
     color: $primary
     background-color: #fff
+    text-decoration: none
 
 .button
+    text-decoration: none
     text-transform: uppercase
     border: none
     padding: 25px 45px
     background-color: $primary
     color: #ffffff
     +bold
+    &-fitting
+        color: $primary
+        background-color: #fff
+        border: none
+    &-add
+        background-color: lighten($primary, 10%)
+        color: #ffffff
+    &-like
+        background-color: $primary
+        height: 30px
+        width: 30px
+        border: none
+        img
+            width: 100%
+
+        
+
 .bg-secondary
     background-color: $bg-secondary
 
