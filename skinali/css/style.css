@@ -860,4 +860,25 @@ a {
   border: 10px solid transparent;
   border-top: 10px solid #fff;
 }
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory__text {
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.factory__image {
+  margin: 20px 0;
+}
 /*# sourceMappingURL=style.css.map */
