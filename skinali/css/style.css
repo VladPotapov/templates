@@ -851,6 +851,11 @@ a {
   }
 }
 
+.before-slider {
+  max-width: 640px;
+  margin: auto;
+}
+
 .reviews {
   background-color: #f5f6f8;
 }
