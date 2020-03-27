@@ -956,6 +956,28 @@ a {
 .before-slider {
   max-width: 640px;
   margin: auto;
+  position: relative;
+}
+
+.before-slider-arrows {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.before-slider-arrows img {
+  width: 30px;
+}
+
+.arrow-left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.arrow-right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .reviews {

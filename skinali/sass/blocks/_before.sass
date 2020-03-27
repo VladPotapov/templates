@@ -2,3 +2,16 @@
     &-slider
         max-width: 640px
         margin: auto
+        position: relative
+        &-arrows
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            img
+                width: 30px
+
+.arrow
+    &-left
+        transform: translateX(-100%)
+    &-right
+        transform: translateX(100%)
