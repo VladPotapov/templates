@@ -27,4 +27,12 @@ $(window).load(function(){
         $('.select_checked').text(value);
         $('.select__dropdown').toggleClass('select__dropdown_open');
     });
+
+    $("a[href^='#']").click(function() {
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top -120 + "px" });
+        return false;
+    });
+
+    $('[type="tel"]').mask("+7 (999) 999-99-99");
 });
