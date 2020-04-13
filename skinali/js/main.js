@@ -35,4 +35,16 @@ $(window).load(function(){
     });
 
     $('input[type="tel"]').mask("+7 (999) 999-99-99");
+
+    /** показать карту */
+    var reviews = $('.reviews');
+    var reviewsTop = reviews.offset().top;
+
+    $(window).bind('scroll', function() {
+        var windowTop = $(this).scrollTop();
+        if (windowTop > reviewsTop) {
+            $("#map").html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5a22f1db9fd2fdb2591e583261cfa235662851efa48fffd76ef84d8504acf542&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>');
+            $(window).unbind('scroll');
+        }
+    })
 });
