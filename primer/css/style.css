@@ -4,4 +4,19 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.box_one {
+  height: 720px;
+  background-image: url("../img/avto.jpg");
+  background-position: 0% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+
+.box_tue {
+  width: 800px;
+  min-height: 100px;
+  background-color: green;
+}
 /*# sourceMappingURL=style.css.map */
