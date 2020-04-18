@@ -15,8 +15,32 @@
 }
 
 .box_tue {
-  width: 800px;
+  width: 100%;
   min-height: 100px;
+  font-size: 12px;
+  line-height: 18px;
   background-color: green;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  border: 3px solid black;
+}
+
+.basic {
+  border: 2px solid red;
+}
+
+.basic_one {
+  background: #000;
+}
+
+.basic_tue {
+  margin: 10px;
+  padding: 10px;
+  background: green;
 }
 /*# sourceMappingURL=style.css.map */
