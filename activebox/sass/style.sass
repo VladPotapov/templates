@@ -12,6 +12,9 @@ body
     font-size: 14px
     color: #6c7279
 
+a 
+    text-decoration: none
+
 // Дополнительные шрифты
 //font-family: 'Open Sans', sans-serif
 
@@ -24,6 +27,28 @@ body
 //======================================
 
 .header
+    background-color: #000000
     &__inner
         display: flex
         justify-content: space-between
+        align-items: center
+        padding: 35px 0
+        border-bottom: 1px solid #505269
+
+// Nav
+//========================================
+
+.nav
+    display: flex
+    font-size: 13px
+    font-weight: bold
+    text-transform: uppercase
+    &__link
+        margin-left: 50px
+        opacity: 0.75
+        color: #ffffff
+        transition: opacity .3s linear
+        &:first-child
+            margin-left: 0
+        &:hover
+            opacity: 1
