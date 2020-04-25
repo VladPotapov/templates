@@ -10,6 +10,7 @@
 body 
     font-family: 'Raleway', sans-serif
     font-size: 14px
+    -webkit-font-smoothing: antialiased
     color: #6c7279
     background-color: #fff
 
@@ -86,6 +87,7 @@ a
         text-transform: uppercase
         color: #ffffff
     &__subtitle
+        margin-bottom: 65px
         font-size: 22px
         font-weight: bold
         color: #ffffff
@@ -102,5 +104,8 @@ a
     line-height: 0.9
     color: #ffffff
     border-radius: 3px
-    &-red
-        background-color: #e84545
+    border: 0
+    transition: background .1s linear
+    background-color: #e84545
+    &:hover
+        background-color: #dd3434
