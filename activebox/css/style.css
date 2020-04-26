@@ -137,4 +137,37 @@ a {
 .btn:hover {
   background-color: #dd3434;
 }
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.feature__item {
+  width: 33.33333%;
+  padding: 40px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.feature__icon {
+  margin-bottom: 25px;
+}
+
+.feature__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  line-height: 1.5;
+  color: #6c7279;
+}
 /*# sourceMappingURL=style.css.map */
