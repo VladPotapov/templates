@@ -186,6 +186,10 @@ a {
   overflow: hidden;
 }
 
+.works__item:hover .works__content {
+  opacity: 1;
+}
+
 .works__photo {
   position: absolute;
   top: 50%;
@@ -196,11 +200,68 @@ a {
 }
 
 .works__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
-  z-index-width: 100%;
-  z-index-height: 100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(232, 69, 69, 0.9);
+  opacity: 0;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+.works__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.team {
+  margin: 100px 0;
+}
+
+.team__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team__item {
+  width: 25%;
+}
+
+.team__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.team__name {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #2d3033;
+}
+
+.team__prof {
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #e84545;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
