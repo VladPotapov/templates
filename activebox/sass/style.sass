@@ -22,8 +22,9 @@ a
 
 .container
     width: 100%
-    max-width: 1170px
+    max-width: 1200px
     margin: 0 auto
+    padding: 0 15px
 
 // Header
 //======================================
@@ -169,12 +170,15 @@ a
 
 //team
 .team
-    margin: 100px 0
+    margin: 100px 0 70px
     &__inner
         display: flex
         flex-wrap: wrap
+        margin: 0 -15px
     &__item
         width: 25%
+        margin-bottom: 30px
+        padding: 0 15px
     &__photo
         display: block
         max-width: 100%
@@ -190,4 +194,20 @@ a
         color: #e84545
         text-transform: uppercase
     &__text
-        //..
+        margin-bottom: 20px
+        line-height: 1.5
+        color: #6c7270
+
+//social
+.social
+    display: flex
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        margin-right: 4px
+        border: 1px solid #e8ecee
+    &__icon
+        height: 18px
