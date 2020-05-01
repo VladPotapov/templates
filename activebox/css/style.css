@@ -294,10 +294,25 @@ a {
   width: 40px;
   height: 40px;
   margin-right: 4px;
+  background-color: #fff;
   border: 1px solid #e8ecee;
+  -webkit-transition: background .1s linear;
+  transition: background .1s linear;
+}
+
+.social__item:hover {
+  background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+  fill: #000000;
 }
 
 .social__icon {
+  display: block;
   height: 18px;
+  fill: #c6cacc;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
 }
 /*# sourceMappingURL=style.css.map */
