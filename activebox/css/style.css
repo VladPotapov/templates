@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap");
 *,
 *:before,
@@ -125,6 +125,7 @@ a {
   font-family: inherit;
   font-size: 13px;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
   line-height: 0.9;
   color: #ffffff;
@@ -132,11 +133,18 @@ a {
   border: 0;
   -webkit-transition: background .1s linear;
   transition: background .1s linear;
+}
+
+.btn-red {
   background-color: #e84545;
 }
 
-.btn:hover {
+.btn-red:hover {
   background-color: #dd3434;
+}
+
+.btn-long {
+  min-width: 280px;
 }
 
 .feature {
@@ -374,5 +382,50 @@ a {
   text-transform: uppercase;
   line-height: .9;
   color: #f4f2f3;
+}
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+}
+
+.download__text {
+  margin-bottom: 30px;
+  font-size: 13px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer {
+  margin: 70px 0;
+  background-color: #3a3e64;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__block {
+  width: 33.33333%;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

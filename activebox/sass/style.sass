@@ -101,15 +101,19 @@ a
     font-family: inherit
     font-size: 13px
     font-weight: 600
+    text-align: center
     text-transform: uppercase
     line-height: 0.9
     color: #ffffff
     border-radius: 3px
     border: 0
     transition: background .1s linear
-    background-color: #e84545
-    &:hover
-        background-color: #dd3434
+    &-red
+        background-color: #e84545
+        &:hover
+            background-color: #dd3434
+    &-long
+        min-width: 280px
 
 .feature
     display: flex
@@ -259,3 +263,34 @@ a
         text-transform: uppercase
         line-height: .9
         color: #f4f2f3
+
+//Download.................................
+.download
+    margin: 90px 0
+    text-align: center
+    &__title
+        margin-bottom: 10px
+        font-size: 28px
+        color: #2d3033
+        font-weight: 300
+    &__text
+        margin-bottom: 30px
+        font-size: 13px
+        color: #2d3033
+        font-weight: 700
+        text-transform: uppercase
+
+.footer
+    margin: 70px 0
+    background-color: #3a3e64
+    &__inner
+        display: flex
+        flex-wrap: wrap
+    &__block
+        width: 33.33333%
+        text-align: center
+    &__title
+        font-size: 14px
+        font-weight: 700
+        color: #ffffff
+        text-transform: uppercase
