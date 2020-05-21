@@ -224,6 +224,15 @@ a
         height: 18px
         fill: #c6cacc
         transition: fill .1s linear
+    &_footer
+        justify-content: center
+    &_footer .social__item
+        background: none
+        border-width: 2px
+        border-color: #fff
+        border-radius: 2px
+    &_footer .social__icon
+        fill: #fff
 
 
 //Reviews....................................
@@ -281,7 +290,7 @@ a
         text-transform: uppercase
 
 .footer
-    margin: 70px 0
+    padding: 70px 0
     background-color: #3a3e64
     &__inner
         display: flex
@@ -290,7 +299,13 @@ a
         width: 33.33333%
         text-align: center
     &__title
+        margin-bottom: 10px
         font-size: 14px
         font-weight: 700
         color: #ffffff
         text-transform: uppercase
+    &__address
+        font-size: 14px
+        font-style: normal
+        line-height: 1.5
+        color: rgba(255, 255, 255, .5)
