@@ -76,6 +76,10 @@ a {
   opacity: 1;
 }
 
+.burger {
+  display: none;
+}
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,5 +484,32 @@ a {
 .copyright__text span {
   font-weight: bold;
   color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .intro__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    height: auto;
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+  .intro__title {
+    font-size: 30px;
+  }
+  .intro__subtitle {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

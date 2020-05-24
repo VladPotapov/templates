@@ -61,6 +61,9 @@ a
         &:hover
             opacity: 1
 
+.burger
+    display: none
+
 
 //Intro
 //====================================
@@ -327,3 +330,24 @@ a
         span
             font-weight: bold
             color: #ffffff
+
+//media
+@media (max-width: 991px)
+    .nav
+        display: none
+    .burger
+        display: block
+    .intro
+        &__title
+            font-size: 40px
+
+@media (max-width: 767px)
+    .intro
+        height: auto
+        padding-top: 130px
+        padding-bottom: 30px
+        &__title
+            font-size: 30px
+        &__subtitle
+            margin-bottom: 30px
+            font-size: 16px
