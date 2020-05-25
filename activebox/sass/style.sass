@@ -63,6 +63,33 @@ a
 
 .burger
     display: none
+    padding: 15px 0
+    background: none
+    border: none
+    outline: none
+    cursor: pointer
+    &__item
+        display: block
+        width: 30px
+        height: 3px
+        background-color: #fff
+        color: transparent
+        position: relative
+        &::before,
+        &::after
+            content: ''
+            width: 100%
+            height: 100%
+            background-color: #fff
+            position: absolute
+            left: 0
+            z-index: 1
+        &::before
+            top: -8px
+        &::after
+            bottom: -8px
+        
+            
 
 
 //Intro
@@ -118,6 +145,7 @@ a
     &-long
         min-width: 280px
 
+//features..........................
 .feature
     display: flex
     flex-wrap: wrap
@@ -139,7 +167,7 @@ a
         line-height: 1.5
         color: #6c7279
 
-//works
+//works...............................
 .works
     display: flex
     flex-wrap: wrap
@@ -175,7 +203,7 @@ a
         text-transform: uppercase
         font-weight: 700
 
-//team
+//team....................................
 .team
     margin: 100px 0 70px
     &__inner
@@ -205,7 +233,7 @@ a
         line-height: 1.5
         color: #6c7270
 
-//social
+//social......................................
 .social
     display: flex
     &__item
@@ -294,6 +322,7 @@ a
         font-weight: 700
         text-transform: uppercase
 
+//footer...............................
 .footer
     background-color: #3a3e64
     &__inner
@@ -333,13 +362,22 @@ a
 
 //media
 @media (max-width: 991px)
+
     .nav
         display: none
+
     .burger
         display: block
+
     .intro
         &__title
             font-size: 40px
+
+    .feature
+        &__item
+            width: 50%
+    
+
 
 @media (max-width: 767px)
     .intro
@@ -351,3 +389,9 @@ a
         &__subtitle
             margin-bottom: 30px
             font-size: 16px
+
+    .feature
+        &__item
+            width: 100%
+            padding-left: 0
+            padding-right: 0
