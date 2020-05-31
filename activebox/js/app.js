@@ -5,10 +5,14 @@ $(function () {
     let scrollPos = $(window).scrollTop();
 
 
-    $(window).on("scroll", function () {
+    $(window).on("scroll load resize", function () {
+        introH = intro.innerHeight();
         scrollPos = $(this).scrollTop();
-        console.log(scrollPos);
+        if (scrollPos > introH) {
+            header.addClass("fixed");
+        }
+        else {
+            header.removeClass("fixed");
+        }
     });
-
-    header.addClass("fixed");
 });
