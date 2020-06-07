@@ -1,4 +1,5 @@
 $(function () {
+    /** fixed header */
     let header = $('#header');
     let intro = $('#intro');
     let introH = intro.innerHeight();
@@ -15,4 +16,19 @@ $(function () {
             header.removeClass("fixed");
         }
     });
+
+    /**плавная прокрутка */
+    $("[data-scroll]").on("click", function (event) {
+        event.preventDefault();
+
+        let elementId = $(this).data('scroll');
+        let elementOffset = $(elementId).offset().top;
+
+        console.log(elementOffset);
+
+        $("html, body").animate({
+            scrollTop: elementOffset
+        });
+    });
+
 });
