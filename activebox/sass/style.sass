@@ -283,6 +283,11 @@ a
 .reviews
     overflow: hidden
     background-color: #53354a
+    &__slider
+        height: 500px
+        overflow: hidden
+    &__slider.slick-initialized
+        height: auto
     &__item
         display: flex
         flex-wrap: wrap
@@ -316,6 +321,44 @@ a
         text-transform: uppercase
         line-height: .9
         color: #f4f2f3
+
+.slick-dots
+    display: flex
+    justify-content: center
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: 2
+
+    width: 50%
+    margin: 0
+    padding: 0 0 10px
+
+    list-style: none
+    li
+        margin: 0 5px
+
+    button
+        width: 10px
+        height: 10px
+        padding: 0
+
+        font-size: 0   
+        color: transparent
+
+        background-color: #ffffff
+        opacity: .5
+        border: 0
+        border-radius: 50%
+
+        cursor: pointer
+
+    button:focus
+        outline: 0
+
+    .slick-active
+        button
+            opacity: 1
 
 //Download.................................
 .download
@@ -381,6 +424,18 @@ a
 @media (max-width: 991px)
     .nav
         display: none
+        width: 100%
+        flex-direction: column
+        position: absolute
+        top: 100%
+        right: 0
+        text-align: right
+        background-color: #31344e
+        &__link
+            padding: 9px 15px
+
+    .nav.show
+        display: flex
 
     .burger
         display: block
