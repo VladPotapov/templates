@@ -43,6 +43,18 @@ body {
     color: #202020;
 }
 
+.title-main {
+    font-size: 56px;
+    color: #202020;
+    font-weight: 700;
+}
+
+.text-main {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #4f4f4f;
+}
+
 .nav {
     list-style-type: none;
     display: flex;
@@ -70,6 +82,16 @@ body {
     font-weight: 700;
 }
 
+.batton {
+    color: #fff;
+    background-color: #5528FF;
+    border-radius: 10px;
+    padding: 10px 45px;
+    border: none;
+    outline: 0;
+    font-size: 24px;
+}
+
 .page {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -88,4 +110,20 @@ body {
 
 .page-top {
     border: 1px solid #c2c2c2
+}
+
+.services {
+    display: grid;
+    grid-template: 50%  50% / 50% 50%;
+}
+
+.services h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.services p {
+    font-size: 14px;
+    color: #b2b2b2;
+    line-height: 1.5;
 }
