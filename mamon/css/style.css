@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    box-sizing: border-box;
 }
 
 .header {
@@ -117,6 +118,21 @@ body {
     grid-template: 50%  50% / 50% 50%;
 }
 
+.services-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services_img {
+    flex-basis: 120px;
+    text-align: center;
+}
+
+.services_text {
+    flex-basis: calc(100% - 120px);
+}
+
 .services h3 {
     font-size: 28px;
     font-weight: 400;
@@ -126,4 +142,9 @@ body {
     font-size: 14px;
     color: #b2b2b2;
     line-height: 1.5;
+}
+
+.clients {
+    display: grid;
+    grid-template: 120px 120px / repeat(4, 25%);
 }
