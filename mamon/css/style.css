@@ -2,6 +2,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
 .wrap {
     width: 100%;
     max-width: 1180px;
@@ -146,5 +150,57 @@ body {
 
 .clients {
     display: grid;
-    grid-template: 120px 120px / repeat(4, 25%);
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
+    text-align: center;
+    grid-row-gap: 40px;
+}
+
+.team {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 33%);
+    grid-row-gap: 40px;
+}
+
+.team-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team-item img {
+    max-width: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.team-item>div {
+    flex-basis: calc(100% - 100px);
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f7f7f7;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    padding-left: 0;
+    display: flex;
+}
+
+
+.social>li {
+    margin-left: 15px;
+}
+
+.social>li>a {
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 24px;
 }
